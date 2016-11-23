@@ -17,8 +17,10 @@ function printPeople (result){
 }
 
 
-db.select('id', 'first_name', 'last_name', 'birthdate').from('famous_people')
-  .where('famous_people.first_name', input).orWhere('famous_people.last_name', input)
+db.select('id', 'first_name', 'last_name', 'birthdate')
+  .from('famous_people')
+  .where('famous_people.first_name', input)
+  .orWhere('famous_people.last_name', input)
 .then((result) => {
   printPeople(result)
 })

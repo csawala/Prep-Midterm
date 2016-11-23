@@ -1,5 +1,9 @@
 // Update with your config settings.
 
+// ACCESS DB FROM CLI
+// psql =h ec2-54-83-5-43.compute-1.amazonaws.com -U ggtynrilwnquyk -d d6gpgcsr54b700
+
+
 module.exports = {
 
   development: {
